@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <header>
+        <section id="container">
+            <div id="perfil">
+                <div id="imgDiv">
+                    <img src="" alt="">
+                </div>
+                <h2 id="usuário">exemple@gmail.com</h2>
+            </div>
+            <nav id="navegaçãoPáginas">
+                <a href="">Home</a>
+                <a href="">Profile</a>
+                <a href="">Portfolio</a>
+                <a href="">Notification</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="dadosNum">
+            <div id="balance" class="cardsTop">
+                <h2>Balance</h2>
+                <div>
+                    <h3>$</h3>
+                    <p>628</p>
+                </div>
+            </div>
+            <div id="jobs" class="cardsTop">
+                <h2>Jobs</h2>
+                <div class="dados" id="NumJobs">(65)</div>
+            </div>
+            <div id="proposals" class="cardsTop">
+                <h2>Proposals</h2>
+                <div class="dados" id="NumPropostas">(67)</div>
+            </div>
+            <div id="rating" class="cardsTop">
+                <h2>Rating</h2>
+                <div class="dados">8,25</div>
+            </div>
+        </section>
+        <section id="partHistórico">
+            <div id="hisTrabalho">
+                <h2 class="h2Historico">Employmeny history:</h2>
+                <section id="trabalhos">
+                    
+                </section>
+            </div>
+
+            <div id="desempenho">
+                <h2 class="h2Historico">Performance</h2>
+                <svg>
+                    <circle cx="70" cy="70" r="70" id="Cpercent"></circle>
+                </svg>
+                <div id="porcentagem">
+                    <h2 id="numPercent">
+                    </h2>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="desempenho.js"></script>
+</body>
+</html>

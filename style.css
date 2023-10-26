@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor-1: #ffff;
+    --cor-2: #676f9d;
+    --cor-3: #424769;
+    --cor-4: #2d3250;
+    --cor-5: #f9b17a;
+    --font:'Raleway', sans-serif;/*usar regular e semibold*/
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    width: 20%;
+    background-color: var(--cor-4);
+}
+#container{
+    height: max-content;
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#imgDiv{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: gray;
+}
+#usuário{
+    font-family: var(--font);
+    font-weight: 400;
+    color: white;
+    font-size: 10pt;
+    margin-top: 10px;
+}
+#navegaçãoPáginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+}
+#navegaçãoPáginas a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font);
+    font-size: 10pt;
+    font-weight: 700;
+    transition: 0.2s;
+    padding: 10px;
+    border-radius: 10px;
+}
+#navegaçãoPáginas a:hover{
+    background-color: rgba(0, 0, 0, 0.162);
+}
+
+main{
+    width: 80%;
+    height: 100vh;
+    background-color: var(--cor-3);
+}
+#dadosNum{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardsTop{
+    width: 200px;
+    height: 130px;
+    background-color: white;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.072);
+    transition: 0.2s;
+}
+.cardsTop:hover{
+    cursor: pointer;
+    scale: 1.02;
+    transition: 0.2s;
+    box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.082);
+}
+
+.cardsTop h2{
+    color: gray;
+    font-size: 10pt;
+    font-family: var(--font);
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.cardsTop div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardsTop h3{
+    color: var(--cor-5);
+    font-weight: bold;
+    font-size: 20pt;
+}
+.cardsTop p{
+    font-size: 20pt;
+    font-family: var(--font);
+    color: white;
+}
+#balance{
+    background-color: var(--cor-4);
+}
+#balance h2{
+    color: white;
+    font-weight: bold;
+}
+.dados{
+    font-size: 20pt;
+    color: var(--cor-4);
+    font-family: var(--font);
+    font-weight: bold;
+}
+#partHistórico{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.h2Historico{
+    font-family: var(--font);
+    font-size: 13pt;
+    font-weight: bold;
+    color: gray;
+}
+#hisTrabalho{
+    background-color: white;
+    width: 71%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#trabalhos{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid gray;
+    margin-top: 30px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#CardTrabalho{
+    background-color: gray;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#desempenho{
+    width: 200px;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.082);
+    font-family: var(--font);
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#desempenho svg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 50%;
+}
+circle{
+    height: 150px;
+    width: 150px;
+    transform: translate( 5px, 5px);
+    fill: none;
+    stroke: var(--cor-5);
+    stroke-width: 10;
+    stroke-dasharray: 440;
+}
+#numPercent{
+    color: var(--cor-4);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 13pt;
+}
