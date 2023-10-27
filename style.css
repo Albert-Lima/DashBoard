@@ -158,8 +158,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: scroll;
 }
-#cardJobs{
+.CardTrabalhoClass{
     background-color: rgb(160, 160, 160);
     height: 30px;
     margin-top: 20px;
@@ -236,4 +237,9 @@ main{
     font-family: var(--font);
     font-weight: 700;
     font-size: 13pt;
+}
+#porcentagem{
+    position: relative;
+    top: -110px;
+    left: 5px;
 }

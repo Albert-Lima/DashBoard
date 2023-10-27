@@ -1,33 +1,22 @@
-var ContainerTrabalhos = document.querySelector('#trabalhos')
-var trabalhos = document.createElement('div')
-var DadosTrabalho = document.createElement('div')
-var ValorRecebido = document.createElement('div')
-var DJob = document.createElement('div')
-var DClient = document.createElement('div')
-var DData = document.createElement('div')
-var DRecebido = document.createElement('div')
+var ContainerTrabalhos = document.querySelector('#trabalhos')//os elemento serão anexados nesse
 
-trabalhos.setAttribute('id', 'cardJobs')
-DadosTrabalho.setAttribute('id', 'DadosTrabalho')
-ValorRecebido.setAttribute('id', 'ValorRecebido')
-DData.setAttribute('class', 'dadosJOBS')
-DClient.setAttribute('class', 'dadosJOBS')
-DJob.setAttribute('class', 'dadosJOBS')
-DRecebido.setAttribute('class', 'dadosJOBS')
+var ValorRecebido = document.createElement('div')//aqui está os valores recebidos por trabalho
+var NumJobs = document.querySelector('#NumJobs')
 
-function adicionarElementos(){
-    ContainerTrabalhos.appendChild(trabalhos)
-    trabalhos.appendChild(DadosTrabalho)
-    trabalhos.appendChild(ValorRecebido)
+var NumTratado = NumJobs.innerHTML.replace(/\D/g, ''); // Remove todos os não dígitos
+var numCards = Number(NumTratado);
 
-    DadosTrabalho.appendChild(DJob)
-    DadosTrabalho.appendChild(DClient)
-    DadosTrabalho.appendChild(DData)
-    ValorRecebido.appendChild(DRecebido)
-
-    DJob.innerHTML = 'Job'
-    DClient.innerHTML = 'Client'
-    DData.innerHTML = 'Data'
-    DRecebido.innerHTML = 'Recebido'
+function AdicionarElementos(){
+    for( i = 0; i < numCards; i++){
+        var trabalhos = document.createElement('div')
+        trabalhos.setAttribute('id', 'cardTrabalho'+ i)
+        trabalhos.setAttribute('class', 'CardTrabalhoClass')
+        ContainerTrabalhos.appendChild(trabalhos)
+        
+        var DadosTrabalho = document.createElement('div')//as três primeiras palavras
+        var numero = i + 1
+        DadosTrabalho.innerHTML = 'fucionou ' + numero
+        trabalhos.appendChild(DadosTrabalho)
+    }    
 }
-window.addEventListener('load', adicionarElementos)
+window.addEventListener('load', AdicionarElementos)
