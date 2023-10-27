@@ -1,6 +1,6 @@
 var ContainerTrabalhos = document.querySelector('#trabalhos')//os elemento serão anexados nesse
 
-var ValorRecebido = document.createElement('div')//aqui está os valores recebidos por trabalho
+
 var NumJobs = document.querySelector('#NumJobs')
 
 var NumTratado = NumJobs.innerHTML.replace(/\D/g, ''); // Remove todos os não dígitos
@@ -14,9 +14,28 @@ function AdicionarElementos(){
         ContainerTrabalhos.appendChild(trabalhos)
         
         var DadosTrabalho = document.createElement('div')//as três primeiras palavras
+        DadosTrabalho.setAttribute('id', 'DadosTrabalho')
+        var ValorRecebido = document.createElement('div')//aqui está os valores recebidos por trabalho
+        ValorRecebido.setAttribute('id', 'ValorRecebido')
+
+        var DadosJob = document.createElement('div')
+        var DadosClient = document.createElement('div')
+        var DadosData = document.createElement('div')
+        var DadosValor = document.createElement('div')
+
         var numero = i + 1
-        DadosTrabalho.innerHTML = 'fucionou ' + numero
+        DadosJob.innerHTML = 'Job '+ numero
+        DadosClient.innerHTML = 'Client' + numero
+        DadosData.innerHTML = '__/__/____'
+        DadosValor.innerHTML = '$00,00'
+
+        
         trabalhos.appendChild(DadosTrabalho)
+        trabalhos.appendChild(ValorRecebido)
+        DadosTrabalho.appendChild(DadosJob)
+        DadosTrabalho.appendChild(DadosClient)
+        DadosTrabalho.appendChild(DadosData)
+        ValorRecebido.appendChild(DadosValor)
     }    
 }
 window.addEventListener('load', AdicionarElementos)
