@@ -299,9 +299,6 @@ main{
         flex-direction: row;
         width: 100%;
     }
-    #perfil{
-        background-color: black;
-    }
     #navegaçãoPáginas{
         flex-direction: row;
     }
