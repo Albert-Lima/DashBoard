@@ -201,7 +201,7 @@ main{
 }
 #ValorRecebido{
     height: 30px;
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -295,6 +295,9 @@ main{
     main{
         width: 100%;
     }
+    #DadosData{
+        display: none;
+    }
     #container{
         flex-direction: row;
         width: 100%;
@@ -304,10 +307,31 @@ main{
     }
 }
 @media (max-width: 500px){
+    body{
+        background-color: var(--cor-3);
+    }
+    #navegaçãoPáginas{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    #container{
+        margin-top: 0px;
+    }
     #dadosNum{
         flex-direction: column;
     }
     #parte1Dados, #parte2Dados{
         width: 100%;
+    }
+    #partHistórico{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 30px;
+        padding-bottom: 50px;
+    }
+    #hisTrabalho{
+        width: 90%;
     }
 }

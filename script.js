@@ -21,6 +21,7 @@ function AdicionarElementos(){
         var DadosJob = document.createElement('div')
         var DadosClient = document.createElement('div')
         var DadosData = document.createElement('div')
+        DadosData.setAttribute('id', 'DadosData')
         var DadosValor = document.createElement('div')
 
         var numero = i + 1
