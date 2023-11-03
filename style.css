@@ -171,6 +171,19 @@ main{
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: darkgray lightgray;
+}
+#trabalhos::-webkit-scrollbar{
+    width: 10px;
+}
+#trabalhos::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 5px;
+}
+#trabalhos::-webkit-scrollbar-track{
+    background-color: var(--cor-4);
+    border-radius: 5px;
 }
 .CardTrabalhoClass{
     background-color: rgb(160, 160, 160);
@@ -340,5 +353,8 @@ main{
     #desempenho{
         width: 95%;
         height: 270px;
+    }
+    #trabalhos::-webkit-scrollbar{
+        width: 5px;
     }
 }
