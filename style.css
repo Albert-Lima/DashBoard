@@ -70,20 +70,20 @@ main{
 #dadosNum{
     display: flex;
     flex-direction: row;
-    padding: 30px;
-    justify-content: space-between;
     align-items: center;
+    width: 90%;
+    padding: 30px;
 }
 #parte1Dados{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     width: 50%;
+    justify-content: space-evenly;
 }
 #parte2Dados{
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     width: 50%;
 }
 .cardsTop{
@@ -140,11 +140,11 @@ main{
     font-weight: bold;
 }
 #partHistórico{
-    height: 300px;
+    height: 350px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 30px;
 }
 .h2Historico{
@@ -155,8 +155,8 @@ main{
 }
 #hisTrabalho{
     background-color: white;
-    width: 71%;
-    height: 100%;
+    width: 70%;
+    height: 300px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ main{
 
 
 #desempenho{
-    width: 200px;
+    width: 30%;
     height: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -268,12 +268,6 @@ main{
     .cardsTop{
         scale: 0.9;
     }
-    #hisTrabalho{
-        scale: 0.9;
-    }
-    #desempenho{
-        scale: 0.9;
-    }
 }
 @media (max-width: 900px){
     #DadosTrabalho{
@@ -306,6 +300,14 @@ main{
         flex-direction: row;
     }
 }
+@media (max-width: 690px) {
+    #desempenho{
+        width: 40%;
+    }
+    #hisTrabalho{
+        width: 60%;
+    }
+}
 @media (max-width: 500px){
     body{
         background-color: var(--cor-3);
@@ -326,12 +328,17 @@ main{
     }
     #partHistórico{
         flex-direction: column;
-        width: 100%;
-        padding: 0px;
-        margin-bottom: 30px;
-        padding-bottom: 50px;
+        justify-content: space-evenly;
+        height: 700px;
+        width: 90%;
+        padding-top: 0px;
     }
     #hisTrabalho{
         width: 90%;
+        margin: auto;
+    }
+    #desempenho{
+        width: 95%;
+        height: 270px;
     }
 }
